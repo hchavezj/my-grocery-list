@@ -1,19 +1,35 @@
 :root {
-    --background: 	#292d3e;
-    --foreground: 	#959dcb;
-    --comment: 	    #676e95;
-    --accent: 	    #c3e88d;
-    --redish: 	    #ff5370;
-    --orangish: 	#f78c6c;
-    --yellowish: 	#ffcb6b;
-    --greenish: 	#c3e88d;
-    --bluish: 	    #82aaff;
-    --purplish: 	#c792ea;
+    --Rosewater: 	#f5e0dc;
+	--Flamingo:	    #f2cdcd;
+	--Pink:      	#f5c2e7;
+	--Mauve:    	#cba6f7;
+	--Red:          #f38ba8;
+	--Maroon:   	#eba0ac;
+	--Peach:    	#fab387;
+	--Yellow:   	#f9e2af;
+	--Green:    	#a6e3a1;
+	--Teal:        	#94e2d5;
+	--Sky:  	    #89dceb;
+	--Sapphire: 	#74c7ec;
+	--Blue:        	#89b4fa;
+	--Lavender: 	#b4befe;
+	--Text: 	    #cdd6f4;
+	--Subtext1: 	#bac2de;
+	--Subtext0: 	#a6adc8;
+	--Overlay2: 	#9399b2;
+	--Overlay1: 	#7f849c;
+	--Overlay0: 	#6c7086;
+	--Surface2: 	#585b70;
+	--Surface1: 	#45475a;
+	--Surface0: 	#313244;
+	--Base: 	    #1e1e2e;
+	--Mantle:	    #181825;
+	--Crust: 	    #111111;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background);
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--Base);
     color: var(--foreground);
     display: flex;
     flex-direction: column;
@@ -26,7 +42,7 @@ body {
     font-size: 4em;
     font-weight: lighter;
     letter-spacing: 0.05em;
-    color: var(--accent);
+    color: var(--Text);
 }
 
 .newGroceryForm {
@@ -35,7 +51,7 @@ body {
 
 #newGrocery {
     background-color: white;
-    color: var(--comment);
+    color: var(--Mantle);
     padding: 0.5em;
     width: 20em;
     font-size: 1.5em;
@@ -43,9 +59,9 @@ body {
 }
 
 #addBtn {
-    background-color: var(--accent);
+    background-color: var(--Blue);
     color: var(--background);
-    padding: 1.0em;
+    padding: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
@@ -53,7 +69,8 @@ body {
 }
 
 #addBtn:hover {
-    background-color: var(--bluish);
+    background-color: var(--Teal);
+    font-weight: bolder;
 }
 
 #groceryList{
@@ -63,13 +80,13 @@ body {
     justify-content: center;
     margin-top: 2em;
     border-radius: 0.5em;
-    background-color: var(--foreground);
-    color: var(--background);
+    background-color: var(--Surface0);
+    color: var(--Mantle);
 }
 
 .groceryItem {
     background-color: white;
-    color: var(--background);
+    color: var(--Base);
     margin: 0.5em;
     width: 24em;
     text-align: center;
@@ -79,7 +96,6 @@ body {
 }
 
 .groceryItem:hover {
-    background-color: var(--purplish);
-    font-weight: bold;
+    background-color: var(--Red);
     cursor: pointer;
 }
